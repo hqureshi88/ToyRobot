@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{9E1115B9-8269-4095-B62A-8120BB3EF26F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToyRobotSimulator/Behaviours/Behaviour.cs">
+    <Files>
+      <File FileName="ToyRobotSimulator/Factory.cs" Line="31" Column="39" />
+      <File FileName="ToyRobotSimulator/Behaviours/Behaviour.cs" Line="1" Column="1" />
+      <File FileName="ToyRobotSimulator/Behaviours/Interface/IBehaviour.cs" />
+      <File FileName="ToyRobotSimulator/ToyBoard/ToyBoard.cs" Line="1" Column="1" />
+      <File FileName="ToyRobotSimulator/Toy/Interface/IPosition.cs" Line="7" Column="9" />
+      <File FileName="ToyRobotSimulator/Toy/Command.cs" Line="1" Column="1" />
+      <File FileName="ToyRobotSimulator/Toy/Position.cs" Line="8" Column="16" />
+      <File FileName="ToyRobotSimulator/Toy/Interface/IToyRobot.cs" Line="12" Column="10" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/MainProgram.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/Toy/ToyRobot.cs" Line="29" Column="27" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/ConsoleChecker/InputParser.cs" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ToySimulator" expanded="True">
+            <Node name="ToySimulator" expanded="True">
+              <Node name="Behaviours" expanded="True">
+                <Node name="Behaviour.cs" selected="True" />
+              </Node>
+              <Node name="ConsoleChecker" expanded="True" />
+              <Node name="ProcessUserInput" expanded="True" />
+              <Node name="Toy" expanded="True">
+                <Node name="Interface" expanded="True" />
+              </Node>
+              <Node name="ToyBoard" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ToySimulator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
