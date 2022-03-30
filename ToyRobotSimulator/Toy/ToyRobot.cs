@@ -9,6 +9,9 @@ namespace ToySimulator.Toy
         public Direction Direction { get; set; }
         public IPosition Position { get; set; }
 
+        //Direction _direction;
+        //IPosition _position; 
+
         // Sets the toy's position and direction.
         public void Place(IPosition position, Direction direction)
         {
@@ -19,8 +22,7 @@ namespace ToySimulator.Toy
         // Determines the next position of the toy based on the direction it's currently facing.
         public IPosition GetNextPosition()
         {
-            //var newPosition = new Position(Position.X, Position.Y);
-            IPosition newPosition = Factory.CreatePosition(Position.X, Position.Y);
+            var newPosition = Factory.CreatePosition(Position.X, Position.Y);
 
             switch (Direction)
             {

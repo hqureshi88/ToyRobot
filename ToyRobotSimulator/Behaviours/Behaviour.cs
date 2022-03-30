@@ -14,39 +14,40 @@ namespace ToySimulator.Behaviours
     /// </summary>
     public class Behaviour : IBehaviour
     {
-        public IToyRobot ToyRobot { get; private set; }
-        public IToyBoard SquareBoard { get; private set; }
-        public IInputParser InputParser { get; private set; }
+
+        IToyRobot _toyRobot;
+        IToyBoard _squareBoard;
+        IInputParser _inputParser;
 
         public Behaviour(IToyRobot toyRobot, IToyBoard squareBoard, IInputParser inputParser)
         {
-            ToyRobot = toyRobot;
-            SquareBoard = squareBoard;
-            InputParser = inputParser;
+            _toyRobot = toyRobot;
+            _squareBoard = squareBoard;
+            _inputParser = inputParser;
         }
 
         public string ProcessCommand(string[] input)
         {
-            var command = InputParser.ParseCommand(input);
-            if (command != Command.Place && ToyRobot.Position == null) return string.Empty;
+            var command = _inputParser.ParseCommand(input);
+            if (command != Command.Place && _toyRobot.Position == null) return string.Empty;
 
             switch (command)
             {
                 case Command.Place:
-                    var placeCommandParameter = InputParser.ParseCommandParameter(input);
-                    if (SquareBoard.IsValidPosition(placeCommandParameter.Position))
-                        ToyRobot.Place(placeCommandParameter.Position, placeCommandParameter.Direction);
+                    var placeCommandParameter = _inputParser.ParseCommandParameter(input);
+                    if (_squareBoard.IsValidPosition(placeCommandParameter.Position))
+                        _toyRobot.Place(placeCommandParameter.Position, placeCommandParameter.Direction);
                     break;
                 case Command.Move:
-                    var newPosition = ToyRobot.GetNextPosition();
-                    if (SquareBoard.IsValidPosition(newPosition))
-                        ToyRobot.Position = newPosition;
+                    IPosition newPosition = _toyRobot.GetNextPosition();
+                    if (_squareBoard.IsValidPosition(newPosition))
+                        _toyRobot.Position = newPosition;
                     break;
                 case Command.Left:
-                    ToyRobot.RotateLeft();
+                    _toyRobot.RotateLeft();
                     break;
                 case Command.Right:
-                    ToyRobot.RotateRight();
+                    _toyRobot.RotateRight();
                     break;
                 case Command.Report:
                     return GetReport();
@@ -56,8 +57,8 @@ namespace ToySimulator.Behaviours
 
         public string GetReport()
         {
-            return string.Format("Output: {0},{1},{2}", ToyRobot.Position.X,
-                ToyRobot.Position.Y, ToyRobot.Direction.ToString().ToUpper());
+            return string.Format("Output: {0},{1},{2}", _toyRobot.Position.X,
+                _toyRobot.Position.Y, _toyRobot.Direction.ToString().ToUpper());
         }
     }
 }

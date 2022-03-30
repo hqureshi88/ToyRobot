@@ -30,6 +30,14 @@ namespace ToySimulator
         {
             return new Position(x, y);
         }
+        public static IPlaceCommandParameter CreatePlaceParameter(IPosition x, Direction y)
+        {
+            return new PlaceCommandParameter(x, y);
+        }
+        public static IPlaceCommandParameterParser CreateCommandParameterParser()
+        {
+            return new PlaceCommandParameterParser();
+        }
 
     }
 }

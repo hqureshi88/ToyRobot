@@ -6,7 +6,7 @@ namespace ToySimulator.ConsoleChecker
 {
 
     // This class checks the parameters for the "PLACE" command.
-    public class PlaceCommandParameterParser
+    public class PlaceCommandParameterParser : IPlaceCommandParameterParser
     {        
         // Number of parameters provided for "PLACE" Command. (X,Y,F)
         private const int ParameterCount = 3;
@@ -15,10 +15,10 @@ namespace ToySimulator.ConsoleChecker
         private const int CommandInputCount = 2;
 
         // Checks the toy's initial position and the direction it is going to be facing.
-        public PlaceCommandParameter ParseParameters(string[] input)
+        public IPlaceCommandParameter ParseParameters(string[] input)
         {
             Direction direction;
-            Position position = null;
+            IPosition position = null;
 
             // Checks that Place command is followed by valid command parameters (X,Y and F toy's face direction).
             if (input.Length != CommandInputCount)
@@ -35,9 +35,10 @@ namespace ToySimulator.ConsoleChecker
             
             var x = Convert.ToInt32(commandParams[0]);
             var y = Convert.ToInt32(commandParams[1]);
-            position = new Position(x, y);
+            //position = new Position(x, y);
+            position = Factory.CreatePosition(x, y);
 
-            return new PlaceCommandParameter(position, direction);
+            return Factory.CreatePlaceParameter(position, direction);
         }
     }
 }

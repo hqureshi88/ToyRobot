@@ -9,6 +9,6 @@ namespace ToySimulator.ConsoleChecker.Interface
         Command ParseCommand(string[] rawInput);
 
         // This extracts the parameters from the user's input.        
-        PlaceCommandParameter ParseCommandParameter(string[] input);
+        IPlaceCommandParameter ParseCommandParameter(string[] input);
     }
 }

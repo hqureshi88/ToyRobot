@@ -74,6 +74,8 @@
     <Compile Include="Factory.cs" />
     <Compile Include="Behaviours\Interface\IBehaviour.cs" />
     <Compile Include="ProcessUserInput\Process.cs" />
+    <Compile Include="ConsoleChecker\Interface\IPlaceCommandParameter.cs" />
+    <Compile Include="ConsoleChecker\Interface\IPlaceCommandParameterParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Acknowledgements.txt" />

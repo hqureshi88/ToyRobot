@@ -17,9 +17,9 @@ namespace ToySimulator.ConsoleChecker
         }
 
         // Extracts the parameters from the user input and returns it       
-        public PlaceCommandParameter ParseCommandParameter( string[] input)
+        public IPlaceCommandParameter ParseCommandParameter( string[] input)
         {
-            var thisPlaceCommandParameter = new PlaceCommandParameterParser();     
+            var thisPlaceCommandParameter = Factory.CreateCommandParameterParser();     
             return thisPlaceCommandParameter.ParseParameters(input);
         }     
     }

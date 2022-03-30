@@ -5,6 +5,7 @@ namespace ToyRobotSimulator.ProcessUserInput
     {
         public Process()
         {
+            
         }
     }
 }

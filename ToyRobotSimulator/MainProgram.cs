@@ -1,4 +1,5 @@
 ﻿using System;
+using ToySimulator.Behaviours.Interface;
 namespace ToySimulator
 {
     public class MainProgram
@@ -32,7 +33,7 @@ namespace ToySimulator
      EXIT   – Closes the toy Simulator.
 ";
 
-            var simulator = Factory.SimulateBehaviour();
+            IBehaviour simulator = Factory.SimulateBehaviour();
 
             var stopApplication = false;
             Console.WriteLine(description);
