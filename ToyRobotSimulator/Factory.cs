@@ -12,7 +12,7 @@ namespace ToySimulator
     {
         public static IToyBoard CreateBoard()
         {
-            return new ToyBoard.ToyBoard(5, 5);
+            return new ToyBoard.ToyBoard(6, 6);
         }
         public static IInputParser UserInput()
         {

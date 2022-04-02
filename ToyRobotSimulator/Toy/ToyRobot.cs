@@ -9,8 +9,6 @@ namespace ToySimulator.Toy
         public Direction Direction { get; set; }
         public IPosition Position { get; set; }
 
-        //Direction _direction;
-        //IPosition _position; 
 
         // Sets the toy's position and direction.
         public void Place(IPosition position, Direction direction)
@@ -23,23 +21,39 @@ namespace ToySimulator.Toy
         public IPosition GetNextPosition()
         {
             var newPosition = Factory.CreatePosition(Position.X, Position.Y);
-
+            int posY = newPosition.Y;
+            int posX = newPosition.X;
             switch (Direction)
             {
                 case Direction.North:
-                    newPosition.Y = newPosition.Y + 1;
+                    newPosition.Y = positionXY(posY, 5, 1, 1);
                     break;
                 case Direction.East:
-                    newPosition.X = newPosition.X + 1;
+                    newPosition.X = positionXY(posX, 5, 1, 1);
                     break;
                 case Direction.South:
-                    newPosition.Y = newPosition.Y - 1;
+                    newPosition.Y = positionXY(posY, 1, 5, -1);
                     break;
                 case Direction.West:
-                    newPosition.X = newPosition.X - 1;
+                    newPosition.X = positionXY(posX, 1, 5, -1);
                     break;
             }
             return newPosition;
+        }
+
+        // This method is called when change in direction is called from switch
+        // statement
+        public int positionXY(int newPos, int i, int j, int k)
+        {
+            if (newPos == i)
+            {
+                newPos = j;
+            }
+            else
+            {
+                newPos = newPos + k;
+            }
+            return newPos;
         }
 
         // Rotates the direction of the toy 90 degreesto the left.

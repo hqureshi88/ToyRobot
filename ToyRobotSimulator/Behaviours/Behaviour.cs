@@ -29,11 +29,11 @@ namespace ToySimulator.Behaviours
         public string ProcessCommand(string[] input)
         {
             var command = _inputParser.ParseCommand(input);
-            if (command != Command.Place && _toyRobot.Position == null) return string.Empty;
+            if (command != Command.Place_robot && _toyRobot.Position == null) return string.Empty;
 
             switch (command)
             {
-                case Command.Place:
+                case Command.Place_robot:
                     var placeCommandParameter = _inputParser.ParseCommandParameter(input);
                     if (_squareBoard.IsValidPosition(placeCommandParameter.Position))
                         _toyRobot.Place(placeCommandParameter.Position, placeCommandParameter.Direction);

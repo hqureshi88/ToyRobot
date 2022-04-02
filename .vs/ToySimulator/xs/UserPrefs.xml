@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{9E1115B9-8269-4095-B62A-8120BB3EF26F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToyRobotSimulator/Toy/ToyRobot.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="ToyRobotSimulator/Factory.cs" Line="6" Column="1" />
-      <File FileName="ToyRobotSimulator/Behaviours/Behaviour.cs" Line="42" Column="73" />
-      <File FileName="ToyRobotSimulator/ProcessUserInput/Process.cs" Line="8" Column="13" />
-      <File FileName="ToyRobotSimulator/Toy/Position.cs" Line="1" Column="1" />
-      <File FileName="ToyRobotSimulator/Toy/ToyRobot.cs" Line="65" Column="47" NotebookId="1" IsPinned="True" />
-      <File FileName="ToyRobotSimulator/MainProgram.cs" Line="41" Column="3" NotebookId="1" />
-      <File FileName="ToyRobotSimulator/ConsoleChecker/InputParser.cs" Line="14" Column="54" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/Factory.cs" />
+      <File FileName="ToyRobotSimulator/Behaviours/Behaviour.cs" />
+      <File FileName="ToyRobotSimulator/ProcessUserInput/Process.cs" />
+      <File FileName="ToyRobotSimulator/Toy/Position.cs" />
+      <File FileName="ToyRobotSimulator/Toy/ToyRobot.cs" NotebookId="1" IsPinned="True" />
+      <File FileName="ToyRobotSimulator/ToyBoard/ToyBoard.cs" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/MainProgram.cs" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/ConsoleChecker/InputParser.cs" NotebookId="1" />
       <File FileName="ToyRobotSimulator/ConsoleChecker/Interface/IInputParser.cs" NotebookId="1" />
-      <File FileName="ToyRobotSimulator/ToyBoard/ToyBoard.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="ToyRobotSimulator/ConsoleChecker/PlaceCommandParameter.cs" Line="15" Column="46" NotebookId="1" />
-      <File FileName="ToyRobotSimulator/ConsoleChecker/PlaceCommandParameterParser.cs" Line="39" Column="13" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/ConsoleChecker/PlaceCommandParameter.cs" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/ConsoleChecker/PlaceCommandParameterParser.cs" NotebookId="1" />
+      <File FileName="ToyRobotSimulator/Toy/Command.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ToySimulator" expanded="True">
-            <Node name="ToySimulator" expanded="True">
+            <Node name="ToySimulator" expanded="True" selected="True">
               <Node name="Behaviours" expanded="True" />
               <Node name="ConsoleChecker" expanded="True">
                 <Node name="Interface" expanded="True" />
@@ -25,7 +26,6 @@
               <Node name="ProcessUserInput" expanded="True" />
               <Node name="Toy" expanded="True">
                 <Node name="Interface" expanded="True" />
-                <Node name="ToyRobot.cs" selected="True" />
               </Node>
               <Node name="ToyBoard" expanded="True" />
             </Node>

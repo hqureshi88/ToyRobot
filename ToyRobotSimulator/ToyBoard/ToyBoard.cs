@@ -21,8 +21,8 @@ namespace ToySimulator.ToyBoard
         // Check whether the position specified is inside the boundaries of the square board.
         public bool IsValidPosition(IPosition position)
         {
-            return position.X < Columns && position.X >= 0 && 
-                   position.Y < Rows && position.Y >= 0;
+            return position.X < Columns && position.X >= 1 && 
+                   position.Y < Rows && position.Y >= 1;
         }
     }
 }

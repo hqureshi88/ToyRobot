@@ -4,7 +4,7 @@
     // by the console checker classes.
     public enum Command
     {
-        Place,
+        Place_robot,
         Move,
         Left,
         Right,
