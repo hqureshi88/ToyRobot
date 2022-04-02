@@ -11,6 +11,9 @@
         // Checks the next position of the toy based on the direction it's currently facing.
         IPosition GetNextPosition();
 
+        // Gives new position value for either x or y coordinate on board
+        int positionXY(int newPos, int i, int j, int k);
+
         // Rotates the direction of the toy 90 degrees to the left.
         void RotateLeft();
 
