@@ -95,32 +95,10 @@ namespace ToySimulator.Behaviours
                 case Command.Place_wall:
                     var placeCommandWall = _inputParser.ParseCommandWall(input);
 
-                    if(_squareBoard.IsValidPosition(placeCommandWall.Wall))
-
-                        if(_placeWall.Count == 0)
-                        {
-                            _placeWall.Add(placeCommandWall.Wall);
-                            break;
-                        }
-                        bool check = false;
-                        if(placeCommandWall.Wall.X == _toyRobot.Position.X && placeCommandWall.Wall.Y == _toyRobot.Position.Y)
-                        {
-                            check = true;
-                            break;
-                        }
-                        foreach (IPosition i in _placeWall)
-                        {
-                        if (placeCommandWall.Wall.X == i.X && placeCommandWall.Wall.Y == i.Y)
-                            {
-                                check = true;
-                                break;
-                            }
-                        }
-                        if (check == false)
-                        {
-                            _placeWall.Add(placeCommandWall.Wall);
-                        }
-                        break;
+                    if (_squareBoard.IsValidPosition(placeCommandWall.Wall))
+                        PlaceWalls(placeCommandWall);
+                    break;
+                        
             }
             return string.Empty;
         }
@@ -129,6 +107,31 @@ namespace ToySimulator.Behaviours
         {
             return string.Format("Output: {0},{1},{2}", _toyRobot.Position.X,
                 _toyRobot.Position.Y, _toyRobot.Direction.ToString().ToUpper());
+        }
+
+        public void PlaceWalls(IPlaceCommandWall placeCommandWall)
+        {
+            if (_placeWall.Count == 0)
+            {
+                _placeWall.Add(placeCommandWall.Wall);
+            }
+            bool check = false;
+            if (placeCommandWall.Wall.X == _toyRobot.Position.X && placeCommandWall.Wall.Y == _toyRobot.Position.Y)
+            {
+                check = true;
+            }
+            foreach (IPosition i in _placeWall)
+            {
+                if (placeCommandWall.Wall.X == i.X && placeCommandWall.Wall.Y == i.Y)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            if (check == false)
+            {
+                _placeWall.Add(placeCommandWall.Wall);
+            }
         }
 
 
