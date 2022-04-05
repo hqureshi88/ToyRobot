@@ -32,7 +32,7 @@ namespace ToySimulator.Behaviours
 
         public string ProcessCommand(string[] input)
         {
-
+            int num;
             var command = _inputParser.ParseCommand(input);
             if (command != Command.Place_robot && _toyRobot.Position == null)
                 return string.Empty;
@@ -41,48 +41,15 @@ namespace ToySimulator.Behaviours
             {
                 case Command.Place_robot:
                     var placeCommandParameter = _inputParser.ParseCommandParameter(input);
+                    num = 0;
                     if (_squareBoard.IsValidPosition(placeCommandParameter.Position))
-                        if (_placeWall.Count !=0)
-                        {
-                            bool checksum = false;
-                            foreach (IPosition j in _placeWall)
-                            {
-                                if (placeCommandParameter.Position.X == j.X && placeCommandParameter.Position.Y == j.Y)
-                                {
-                                    checksum = true;
-                                }
-                            }
-                            if(checksum == false)
-                            {
-                                _toyRobot.Place(placeCommandParameter.Position, placeCommandParameter.Direction);
-                            }
-                        } else {
-                            _toyRobot.Place(placeCommandParameter.Position, placeCommandParameter.Direction);
-                        }
-
+                        positionRobot(num, placeCommandParameter.Position, placeCommandParameter.Direction);
                     break;
                 case Command.Move:
                     IPosition newPosition = _toyRobot.GetNextPosition();
+                    num = 1;
                     if (_squareBoard.IsValidPosition(newPosition))
-                        if (_placeWall.Count != 0)
-                        {
-                            bool checksumo = false;
-                            foreach (IPosition k in _placeWall)
-                            {
-                                if (newPosition.X == k.X && newPosition.Y == k.Y)
-                                {
-                                    checksumo = true;
-                                }
-                            }
-                            if (checksumo == false)
-                            {
-                                _toyRobot.Position = newPosition;
-                            }
-                        }
-                        else
-                        {
-                            _toyRobot.Position = newPosition;
-                        }
+                        positionRobot(num, newPosition, 0);
                     break;
                 case Command.Left:
                     _toyRobot.RotateLeft();
@@ -134,6 +101,37 @@ namespace ToySimulator.Behaviours
             }
         }
 
+        public void positionRobot(int num, IPosition parameters, Direction direction)
+        {
+                if (_placeWall.Count != 0)
+                {
+                    bool checksum = false;
+                    foreach (IPosition j in _placeWall)
+                    {
+                        if (parameters.X == j.X && parameters.Y == j.Y)
+                        {
+                            checksum = true;
+                        }
+                    }
+                    if (checksum == false && num == 0)
+                    {
+                        _toyRobot.Place(parameters, direction);
+                    } else if (checksum == false && num == 1)
+                    {
+                        _toyRobot.Position = parameters;
+                    }
+                }
+                else {
+                    if(num == 0)
+                    {
+                        _toyRobot.Place(parameters, direction);
+                    } else if( num == 1)
+                    {
+                        _toyRobot.Position = parameters;
+                    }
+                      
+                }
+        }
 
     }
 }

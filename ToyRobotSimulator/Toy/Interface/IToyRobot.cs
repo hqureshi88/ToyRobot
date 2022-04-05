@@ -27,5 +27,6 @@
         // Checks the new direction of the toy. The new direction is based on current direction and the rotation command (LEFT - Right)
         // identifies the side which the toy should be rotated on Left is -1 Right is 1      
         void Rotate(int rotationNumber);
+        
     }
 }

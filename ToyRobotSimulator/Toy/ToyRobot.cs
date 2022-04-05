@@ -84,6 +84,6 @@ namespace ToySimulator.Toy
                 newDirection = directions[index];
             }
             Direction = newDirection;
-        }       
+        }
     }
 }
