@@ -1,6 +1,7 @@
 ﻿using System;
 using ToySimulator.ConsoleChecker.Interface;
 using ToySimulator.Toy;
+//using ToySimulator.ToyWalls;
 
 namespace ToySimulator.ConsoleChecker
 {
@@ -19,15 +20,16 @@ namespace ToySimulator.ConsoleChecker
         {
             Direction direction;
             IPosition position = null;
+            //IToyWall wall = null;
 
             // Checks that Place command is followed by valid command parameters (X,Y and F toy's face direction).
             if (input.Length != CommandInputCount)
-                throw new ArgumentException("Incomplete command. Please ensure that the PLACE command is using format: PLACE X,Y,F");
+                throw new ArgumentException("Incomplete command. Please ensure that the PLACE_ROBOT command is using format: PLACE X,Y,F");
 
-            // Checks that three command parameters are provided for the PLACE command.   
+            // Checks that three command parameters are provided for the PLACE_ROBOT command.   
             var commandParams = input[1].Split(',');
             if (commandParams.Length != ParameterCount)
-                throw new ArgumentException("Incomplete command. Please ensure that the PLACE command is using format: PLACE X,Y,F");
+                throw new ArgumentException("Incomplete command. Please ensure that the PLACE_ROBOT command is using format: PLACE X,Y,F");
 
             // Checks the direction which the toy is going to be facing.
             if (!Enum.TryParse(commandParams[commandParams.Length - 1], true, out direction))
@@ -35,10 +37,10 @@ namespace ToySimulator.ConsoleChecker
             
             var x = Convert.ToInt32(commandParams[0]);
             var y = Convert.ToInt32(commandParams[1]);
-            //position = new Position(x, y);
-            position = Factory.CreatePosition(x, y);
 
+            position = Factory.CreatePosition(x, y);
             return Factory.CreatePlaceParameter(position, direction);
+        
         }
     }
 }

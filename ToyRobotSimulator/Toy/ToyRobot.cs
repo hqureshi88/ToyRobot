@@ -8,8 +8,7 @@ namespace ToySimulator.Toy
     {
         public Direction Direction { get; set; }
         public IPosition Position { get; set; }
-
-
+     
         // Sets the toy's position and direction.
         public void Place(IPosition position, Direction direction)
         {
@@ -23,6 +22,7 @@ namespace ToySimulator.Toy
             var newPosition = Factory.CreatePosition(Position.X, Position.Y);
             int posY = newPosition.Y;
             int posX = newPosition.X;
+
             switch (Direction)
             {
                 case Direction.North:

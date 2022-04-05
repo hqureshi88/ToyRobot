@@ -1,4 +1,5 @@
-﻿namespace ToySimulator.Toy
+﻿using ToySimulator.Toy.Interface;
+namespace ToySimulator.Toy
 {
     /// <summary>
     /// This class represents the position of the toy on the board.

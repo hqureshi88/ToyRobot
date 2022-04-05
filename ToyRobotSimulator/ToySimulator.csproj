@@ -73,9 +73,14 @@
     <Compile Include="Toy\Interface\IPosition.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Behaviours\Interface\IBehaviour.cs" />
-    <Compile Include="ProcessUserInput\Process.cs" />
     <Compile Include="ConsoleChecker\Interface\IPlaceCommandParameter.cs" />
     <Compile Include="ConsoleChecker\Interface\IPlaceCommandParameterParser.cs" />
+    <Compile Include="ConsoleChecker\PlaceCommandWall.cs" />
+    <Compile Include="Toy\ToyWall.cs" />
+    <Compile Include="Toy\Interface\IToyWall.cs" />
+    <Compile Include="ConsoleChecker\Interface\IPlaceCommandWall.cs" />
+    <Compile Include="ConsoleChecker\PlaceCommandWallParser.cs" />
+    <Compile Include="ConsoleChecker\Interface\IPlaceCommandWallParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Acknowledgements.txt" />
@@ -95,8 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behaviours\Interface\" />
-    <Folder Include="ProcessUserInput\" />
-    <Folder Include="ProcessUserInput\Interface\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

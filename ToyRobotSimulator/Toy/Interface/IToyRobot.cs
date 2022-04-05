@@ -4,9 +4,13 @@
     {
         Direction Direction { get; set; }
         IPosition Position { get; set; }
+        //IPosition WallPos { get; set; }
 
         // Sets the toy's position and direction.
         void Place(IPosition position, Direction direction);
+
+        // Sets the wall's position.
+        //void PlaceWall(IPosition wall);
 
         // Checks the next position of the toy based on the direction it's currently facing.
         IPosition GetNextPosition();

@@ -1,4 +1,5 @@
-﻿using ToySimulator.Toy;
+﻿using System;
+using ToySimulator.Toy;
 using ToySimulator.ToyBoard.Interface;
 
 namespace ToySimulator.ToyBoard
@@ -12,6 +13,7 @@ namespace ToySimulator.ToyBoard
         public int Rows { get; private set; }
         public int Columns { get; private set; }
 
+
         public ToyBoard(int rows, int columns)
         {
             Rows = rows;
@@ -21,6 +23,7 @@ namespace ToySimulator.ToyBoard
         // Check whether the position specified is inside the boundaries of the square board.
         public bool IsValidPosition(IPosition position)
         {
+            //Console.WriteLine("Placing Wall on board");
             return position.X < Columns && position.X >= 1 && 
                    position.Y < Rows && position.Y >= 1;
         }

@@ -21,9 +21,11 @@ namespace ToySimulator.ConsoleChecker
         {
             var thisPlaceCommandParameter = Factory.CreateCommandParameterParser();     
             return thisPlaceCommandParameter.ParseParameters(input);
-        }     
+        }
+        public IPlaceCommandWall ParseCommandWall( string[] input )
+        {
+            var thisPlaceCommandWall = Factory.CreateCommandWallParser();
+            return thisPlaceCommandWall.ParseWalls(input);
+        }
     }
-
-
-
 }

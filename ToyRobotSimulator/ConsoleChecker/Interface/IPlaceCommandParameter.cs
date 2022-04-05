@@ -1,5 +1,4 @@
-﻿using System;
-using ToySimulator.Toy;
+﻿using ToySimulator.Toy;
 
 namespace ToySimulator.ConsoleChecker.Interface
 {

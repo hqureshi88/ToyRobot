@@ -9,9 +9,6 @@ namespace ToySimulator.ConsoleChecker
         public IPosition Position { get; set; }
         public Direction Direction { get; set; }
 
-        //IPosition _position;
-        //Direction _direction;
-
         public PlaceCommandParameter(IPosition position,Direction direction)
         {
             Position = position;
