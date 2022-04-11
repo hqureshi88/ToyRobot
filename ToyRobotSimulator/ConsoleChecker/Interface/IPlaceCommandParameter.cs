@@ -1,6 +1,6 @@
-﻿using ToySimulator.Toy;
+﻿using ToyRobotSimulator.Toy;
 
-namespace ToySimulator.ConsoleChecker.Interface
+namespace ToyRobotSimulator.ConsoleChecker.Interface
 {
     public interface IPlaceCommandParameter
     {

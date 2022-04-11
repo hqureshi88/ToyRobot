@@ -1,6 +1,6 @@
-﻿using ToySimulator.Toy;
+﻿using ToyRobotSimulator.Toy;
 
-namespace ToySimulator.ToyBoard.Interface
+namespace ToyRobotSimulator.ToyBoard.Interface
 {
     public interface IToyBoard
     {

@@ -1,13 +1,13 @@
-﻿using ToySimulator.ConsoleChecker;
-using ToySimulator.ConsoleChecker.Interface;
-using ToySimulator.Toy;
-using ToySimulator.Toy.Interface;
-using ToySimulator.ToyBoard.Interface;
-using ToySimulator.Behaviours.Interface;
-using ToySimulator.Behaviours;
+﻿using ToyRobotSimulator.ConsoleChecker;
+using ToyRobotSimulator.ConsoleChecker.Interface;
+using ToyRobotSimulator.Toy;
+using ToyRobotSimulator.Toy.Interface;
+using ToyRobotSimulator.ToyBoard.Interface;
+using ToyRobotSimulator.Behaviours.Interface;
+using ToyRobotSimulator.Behaviours;
 using System;
 
-namespace ToySimulator
+namespace ToyRobotSimulator
 {
     public class Factory
     {

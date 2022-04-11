@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{9E1115B9-8269-4095-B62A-8120BB3EF26F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Toy/ToyRobot.cs">
+    <Files>
+      <File FileName="ToyBoard/ToyBoard.cs" Line="1" Column="1" />
+      <File FileName="Toy/ToyRobot.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ToySimulator" expanded="True">
+            <Node name="ToySimulator" expanded="True">
+              <Node name="ToyBoard" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ToySimulator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

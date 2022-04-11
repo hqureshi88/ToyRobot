@@ -1,8 +1,8 @@
 ﻿using System;
-using ToySimulator.ConsoleChecker.Interface;
-using ToySimulator.Toy;
+using ToyRobotSimulator.ConsoleChecker.Interface;
+using ToyRobotSimulator.Toy;
 
-namespace ToySimulator.ConsoleChecker
+namespace ToyRobotSimulator.ConsoleChecker
 {
     public class InputParser : IInputParser
     {

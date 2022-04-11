@@ -1,9 +1,9 @@
 ﻿using System;
-using ToySimulator.ConsoleChecker.Interface;
-using ToySimulator.Toy;
+using ToyRobotSimulator.ConsoleChecker.Interface;
+using ToyRobotSimulator.Toy;
 //using ToySimulator.ToyWalls;
 
-namespace ToySimulator.ConsoleChecker
+namespace ToyRobotSimulator.ConsoleChecker
 {
 
     // This class checks the parameters for the "PLACE" command.

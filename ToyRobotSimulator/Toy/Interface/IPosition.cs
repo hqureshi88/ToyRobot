@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ToySimulator.Toy
+namespace ToyRobotSimulator.Toy
 {
     public interface IPosition
     {

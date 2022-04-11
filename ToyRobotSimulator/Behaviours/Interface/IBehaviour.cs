@@ -1,6 +1,6 @@
 ﻿using System;
 //using ToySimulator.
-namespace ToySimulator.Behaviours.Interface
+namespace ToyRobotSimulator.Behaviours.Interface
 {
     public interface IBehaviour
     {

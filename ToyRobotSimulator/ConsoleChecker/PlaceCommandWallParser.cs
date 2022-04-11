@@ -1,7 +1,7 @@
 ﻿using System;
-using ToySimulator.ConsoleChecker.Interface;
-using ToySimulator.Toy;
-namespace ToySimulator.ConsoleChecker
+using ToyRobotSimulator.ConsoleChecker.Interface;
+using ToyRobotSimulator.Toy;
+namespace ToyRobotSimulator.ConsoleChecker
 {
     public class PlaceCommandWallParser : IPlaceCommandWallParser
     {

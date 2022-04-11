@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ToySimulator.ConsoleChecker.Interface
+namespace ToyRobotSimulator.ConsoleChecker.Interface
 {
     public interface IPlaceCommandParameterParser
     {

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections;
-using ToySimulator.ConsoleChecker.Interface;
-using ToySimulator.Toy;
-using ToySimulator.Toy.Interface;
-using ToySimulator.ToyBoard.Interface;
-using ToySimulator.Behaviours.Interface;
+using ToyRobotSimulator.ConsoleChecker.Interface;
+using ToyRobotSimulator.Toy;
+using ToyRobotSimulator.Toy.Interface;
+using ToyRobotSimulator.ToyBoard.Interface;
+using ToyRobotSimulator.Behaviours.Interface;
 
-namespace ToySimulator.Behaviours
+namespace ToyRobotSimulator.Behaviours
 {
     /// <summary>
     /// This class is used to simulate the behaviour of the toy.
@@ -61,7 +61,6 @@ namespace ToySimulator.Behaviours
                     return GetReport();
                 case Command.Place_wall:
                     var placeCommandWall = _inputParser.ParseCommandWall(input);
-
                     if (_squareBoard.IsValidPosition(placeCommandWall.Wall))
                         PlaceWalls(placeCommandWall);
                     break;
@@ -76,6 +75,7 @@ namespace ToySimulator.Behaviours
                 _toyRobot.Position.Y, _toyRobot.Direction.ToString().ToUpper());
         }
 
+        //Checks coordinates on board is not taken and places a wall on the board
         public void PlaceWalls(IPlaceCommandWall placeCommandWall)
         {
             if (_placeWall.Count == 0)
@@ -101,6 +101,7 @@ namespace ToySimulator.Behaviours
             }
         }
 
+        //Checks coordinates on board is not taken and places robot on the board
         public void positionRobot(int num, IPosition parameters, Direction direction)
         {
                 if (_placeWall.Count != 0)

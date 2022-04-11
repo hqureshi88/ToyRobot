@@ -1,4 +1,4 @@
-﻿namespace ToySimulator.Toy.Interface
+﻿namespace ToyRobotSimulator.Toy.Interface
 {
     public interface IToyRobot
     {

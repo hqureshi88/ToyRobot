@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
-using ToySimulator.ConsoleChecker.Interface;
-using ToySimulator.Toy;
-using ToySimulator.ToyBoard.Interface;
-namespace ToySimulator.ConsoleChecker
+using ToyRobotSimulator.ConsoleChecker.Interface;
+using ToyRobotSimulator.Toy;
+using ToyRobotSimulator.ToyBoard.Interface;
+namespace ToyRobotSimulator.ConsoleChecker
 {
     // This is a class to store the wall parameters for the "PLACE_WALL" command.
     public class PlaceCommandWall : IPlaceCommandWall

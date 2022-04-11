@@ -1,7 +1,7 @@
-﻿using ToySimulator.Toy;
-using ToySimulator.ToyBoard.Interface;
+﻿using ToyRobotSimulator.Toy;
+using ToyRobotSimulator.ToyBoard.Interface;
 
-namespace ToySimulator.ConsoleChecker.Interface
+namespace ToyRobotSimulator.ConsoleChecker.Interface
 {
     public interface IPlaceCommandWall
     {

@@ -1,7 +1,7 @@
 ﻿using System;
-using ToySimulator.Toy.Interface;
+using ToyRobotSimulator.Toy.Interface;
 
-namespace ToySimulator.Toy
+namespace ToyRobotSimulator.Toy
 {
 
     public class ToyRobot : IToyRobot

@@ -1,8 +1,8 @@
 ﻿using System;
-using ToySimulator.Toy;
-using ToySimulator.ToyBoard.Interface;
+using ToyRobotSimulator.Toy;
+using ToyRobotSimulator.ToyBoard.Interface;
 
-namespace ToySimulator.ToyBoard
+namespace ToyRobotSimulator.ToyBoard
 {
     /// <summary>
     /// This class is the board that the toy sits on. It has a properties for rows and colums.

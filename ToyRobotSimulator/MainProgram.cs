@@ -1,6 +1,6 @@
 ﻿using System;
-using ToySimulator.Behaviours.Interface;
-namespace ToySimulator
+using ToyRobotSimulator.Behaviours.Interface;
+namespace ToyRobotSimulator
 {
     public class MainProgram
     {
@@ -34,7 +34,7 @@ namespace ToySimulator
 ";
 
             IBehaviour simulator = Factory.SimulateBehaviour();
-
+            
             var stopApplication = false;
             Console.WriteLine(description);
             do

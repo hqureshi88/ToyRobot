@@ -1,0 +1,95 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Toy\ToyRobot.cs">
+      <Link>Toy\ToyRobot.cs</Link>
+    </Compile>
+    <Compile Include="..\Toy\Command.cs">
+      <Link>Toy\Command.cs</Link>
+    </Compile>
+    <Compile Include="..\Toy\Direction.cs">
+      <Link>Toy\Direction.cs</Link>
+    </Compile>
+    <Compile Include="..\Toy\Position.cs">
+      <Link>Toy\Position.cs</Link>
+    </Compile>
+    <Compile Include="..\Toy\Interface\IToyRobot.cs">
+      <Link>Toy\Interface\IToyRobot.cs</Link>
+    </Compile>
+    <Compile Include="..\Toy\Interface\IPosition.cs">
+      <Link>Toy\Interface\IPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\PlaceCommandParameter.cs">
+      <Link>ConsoleChecker\PlaceCommandParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\PlaceCommandWall.cs">
+      <Link>ConsoleChecker\PlaceCommandWall.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\PlaceCommandParameterParser.cs">
+      <Link>ConsoleChecker\PlaceCommandParameterParser.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\PlaceCommandWallParser.cs">
+      <Link>ConsoleChecker\PlaceCommandWallParser.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\InputParser.cs">
+      <Link>ConsoleChecker\InputParser.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\Interface\IPlaceCommandParameterParser.cs">
+      <Link>ConsoleChecker\Interface\IPlaceCommandParameterParser.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\Interface\IPlaceCommandWall.cs">
+      <Link>ConsoleChecker\Interface\IPlaceCommandWall.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\Interface\IPlaceCommandParameter.cs">
+      <Link>ConsoleChecker\Interface\IPlaceCommandParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\Interface\IInputParser.cs">
+      <Link>ConsoleChecker\Interface\IInputParser.cs</Link>
+    </Compile>
+    <Compile Include="..\ConsoleChecker\Interface\IPlaceCommandWallParser.cs">
+      <Link>ConsoleChecker\Interface\IPlaceCommandWallParser.cs</Link>
+    </Compile>
+    <Compile Include="..\Behaviours\Behaviour.cs">
+      <Link>Behaviours\Behaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\Behaviours\Interface\IBehaviour.cs">
+      <Link>Behaviours\Interface\IBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="..\ToyBoard\ToyBoard.cs">
+      <Link>ToyBoard\ToyBoard.cs</Link>
+    </Compile>
+    <Compile Include="..\ToyBoard\Interface\ItoyBoard.cs">
+      <Link>ToyBoard\Interface\ItoyBoard.cs</Link>
+    </Compile>
+    <Compile Include="..\Factory.cs">
+      <Link>Factory.cs</Link>
+    </Compile>
+    <Compile Include="..\MainProgram.cs">
+      <Link>MainProgram.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\packages.config">
+      <Link>packages.config</Link>
+    </None>
+  </ItemGroup>
+</Project>
