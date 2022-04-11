@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{9E1115B9-8269-4095-B62A-8120BB3EF26F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToyRobotSimulator.Tests/BehaviourTest.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="ToyRobotSimulator.Tests/UnitTest1.cs" Line="9" Column="17" />
       <File FileName="ToyRobotSimulator.Tests/ToyRobotTest.cs" Line="57" Column="55" />
-      <File FileName="ToyRobotSimulator.Tests/BehaviourTest.cs" Line="1" Column="1" />
+      <File FileName="ToyRobotSimulator.Tests/BehaviourTest.cs" Line="22" Column="50" />
       <File FileName="ToyBoard/ToyBoard.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="Toy/ToyRobot.cs" Line="50" Column="28" NotebookId="1" />
       <File FileName="Behaviours/Behaviour.cs" Line="32" Column="1" NotebookId="1" />
@@ -23,11 +23,7 @@
                 <Node name="Interface" expanded="True" />
               </Node>
             </Node>
-            <Node name="ToyRobotSimulator.Tests" expanded="True">
-              <Node name="Behaviours" expanded="True" />
-              <Node name="ConsoleChecker" expanded="True" />
-              <Node name="BehaviourTest.cs" selected="True" />
-            </Node>
+            <Node name="ToyRobotSimulator.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -36,7 +32,9 @@
           <Node name="ToyRobotSimulator" expanded="True">
             <Node name="ToyRobotSimulator.Tests" expanded="True">
               <Node name="ToyRobotSimulator.Tests" expanded="True">
-                <Node name="ToyRobotTest" expanded="True" selected="True" />
+                <Node name="BehaviourTest" expanded="True">
+                  <Node name="ProcessCommand_TestForPlacingRobot" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
