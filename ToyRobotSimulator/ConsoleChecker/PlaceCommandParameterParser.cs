@@ -20,7 +20,6 @@ namespace ToyRobotSimulator.ConsoleChecker
         {
             Direction direction;
             IPosition position = null;
-            //IToyWall wall = null;
 
             // Checks that Place command is followed by valid command parameters (X,Y and F toy's face direction).
             if (input.Length != CommandInputCount)

@@ -1,29 +1,21 @@
 ﻿<Properties StartupConfiguration="{9E1115B9-8269-4095-B62A-8120BB3EF26F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToyRobotSimulator.Tests/ToyRobotTest.cs">
     <Files>
-      <File FileName="ToyRobotSimulator.Tests/UnitTest1.cs" Line="9" Column="17" />
-      <File FileName="ToyRobotSimulator.Tests/ToyRobotTest.cs" Line="57" Column="55" />
-      <File FileName="ToyRobotSimulator.Tests/BehaviourTest.cs" Line="22" Column="50" />
-      <File FileName="ToyBoard/ToyBoard.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Toy/ToyRobot.cs" Line="50" Column="28" NotebookId="1" />
-      <File FileName="Behaviours/Behaviour.cs" Line="32" Column="1" NotebookId="1" />
-      <File FileName="ConsoleChecker/InputParser.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="MainProgram.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Toy/Position.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Toy/Direction.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="ConsoleChecker/PlaceCommandParameterParser.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Factory.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="ToyRobotSimulator.Tests/ToyRobotTest.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ToyRobotSimulator" expanded="True">
             <Node name="ToyRobotSimulator" expanded="True">
-              <Node name="Toy" expanded="True">
-                <Node name="Interface" expanded="True" />
-              </Node>
+              <Node name="Behaviours" expanded="True" />
+              <Node name="ConsoleChecker" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Toy" expanded="True" />
             </Node>
-            <Node name="ToyRobotSimulator.Tests" expanded="True" />
+            <Node name="ToyRobotSimulator.Tests" expanded="True">
+              <Node name="ToyRobotTest.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -32,9 +24,9 @@
           <Node name="ToyRobotSimulator" expanded="True">
             <Node name="ToyRobotSimulator.Tests" expanded="True">
               <Node name="ToyRobotSimulator.Tests" expanded="True">
-                <Node name="BehaviourTest" expanded="True">
-                  <Node name="ProcessCommand_TestForPlacingRobot" selected="True" />
-                </Node>
+                <Node name="ConsoleCheckerTest" expanded="True" />
+                <Node name="ToyBoardTest" expanded="True" />
+                <Node name="ToyRobotTest" expanded="True" />
               </Node>
             </Node>
           </Node>
