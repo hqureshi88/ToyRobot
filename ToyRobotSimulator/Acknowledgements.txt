@@ -1,24 +1,15 @@
 ﻿
 Sources:
 
-I watched this fantastic video on TDD and C# by Jeremy Clark
-https://www.youtube.com/watch?v=l4xhTq4qmC0&feature=youtu.be
+I started with this Toy Robot Simulator code by Jeff Williams and further developed
+it to complete the specification 
+https://github.com/jeff1978/Toy-Robot-Simulator
 
-I read and used some of this readme file by Duncan-Bayne
-https://github.com/duncan-bayne/toy-robot
+I watched youtube videos produced by 'IamTimCorey' for examples in applying SOLID principles
+to code
+https://www.youtube.com/watch?v=5RwhyZnVRS8&list=PLAaFb7UfyShCoS246UzZJNEiXuD8bg02e
 
-MSDN information on empty interfaces
+Information on Dependency Inversion, Dependency Injection and Inversion of Control,
 https://msdn.microsoft.com/en-us/library/ms182128.aspx
 
-Working examples of Toy Robot Simulator in several languages
-including C#. I used these to inform the app design and get ideas
-for unit tests.
-https://github.com/search?l=C%23&q=toy+robot+simulator&type=Repositories&utf8=%E2%9C%93
-
-I followed these instructions on how to create a good 
-GitHub repo (I had never made one before)
-https://help.github.com/articles/create-a-repo/
-
-I read up on the console class for C# on MSDN
-https://msdn.microsoft.com/en-us/library/system.console(v=vs.110).aspx
 
