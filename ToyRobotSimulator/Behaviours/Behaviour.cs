@@ -106,18 +106,18 @@ namespace ToyRobotSimulator.Behaviours
         {
                 if (_placeWall.Count != 0)
                 {
-                    bool checksum = false;
+                    bool check = false;
                     foreach (IPosition j in _placeWall)
                     {
                         if (parameters.X == j.X && parameters.Y == j.Y)
                         {
-                            checksum = true;
+                            check = true;
                         }
                     }
-                    if (checksum == false && num == 0)
+                    if (check == false && num == 0)
                     {
                         _toyRobot.Place(parameters, direction);
-                    } else if (checksum == false && num == 1)
+                    } else if (check == false && num == 1)
                     {
                         _toyRobot.Position = parameters;
                     }

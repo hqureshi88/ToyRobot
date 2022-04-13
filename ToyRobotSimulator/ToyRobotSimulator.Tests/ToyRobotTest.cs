@@ -15,15 +15,14 @@ namespace ToyRobotSimulator.Tests
         {
             //arrange
             IPosition position = Factory.CreatePosition(x, y);
-            Direction _direction = direction;
             IToyRobot toyRobot = Factory.CreateRobotPosition();
 
             //act
-            toyRobot.Place(position, _direction);
+            toyRobot.Place(position, direction);
 
             //assert
             Assert.Equal(position, toyRobot.Position);
-            Assert.Equal(_direction, toyRobot.Direction);
+            Assert.Equal(direction, toyRobot.Direction);
         }
 
         [Theory]
@@ -40,7 +39,6 @@ namespace ToyRobotSimulator.Tests
             //arrange          
             IToyRobot toyRobot = Factory.CreateRobotPosition();
             toyRobot.Place(Factory.CreatePosition(x, y), _direction);
-            
             IPosition expected = Factory.CreatePosition(a, b);
 
             //act

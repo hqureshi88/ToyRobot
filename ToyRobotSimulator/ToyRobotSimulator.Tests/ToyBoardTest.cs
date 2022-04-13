@@ -1,5 +1,6 @@
 using System;
 using ToyRobotSimulator.Toy;
+using ToyRobotSimulator.ToyBoard.Interface;
 using Xunit;
 
 namespace ToyRobotSimulator.Tests
@@ -16,7 +17,7 @@ namespace ToyRobotSimulator.Tests
             //arrange
 
             //act
-            var toyBoardTest = Factory.CreateBoard();
+            IToyBoard toyBoardTest = Factory.CreateBoard();
             IPosition position = Factory.CreatePosition(a, b);
 
             //assert
