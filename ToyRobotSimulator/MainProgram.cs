@@ -32,6 +32,11 @@ namespace ToyRobotSimulator
      RIGHT  – turns the toy 90 degrees right.
      MOVE   – Moves the toy 1 unit in the facing direction.
      EXIT   – Closes the toy Simulator.
+
+  3: Also add walls on the 5 x 5 grid
+     using the following command:
+
+     PLACE_WALL X,Y (Where X and Y are integers)
 ";
 
             IBehaviour simulator = Factory.SimulateBehaviour();
